@@ -169,3 +169,61 @@
         }
     }
 }
+
+.s-games{
+    padding-top: 5.375rem;
+    padding-bottom: 6.875rem;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 5.375rem;
+        
+        .left-top{
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 25rem;
+
+            span{
+                color: $neutral-700;
+                font-size: .9375rem;
+                font-weight: 600;
+                line-height: 1.4063rem;
+                margin-right: 10.75rem;
+                display: block;
+                margin-top: .6875rem;
+            }
+
+            h2{
+                width: 100%;
+                max-width: 10.9375rem;
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.2037rem;
+            }
+        }
+
+        .right-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            max-width: 47rem;
+
+            ul{
+                display: flex;
+                gap: 1.5rem;
+                justify-content: space-between;
+                margin-left: 10rem;
+            }
+
+            .btn-all-games{
+                display: flex;
+                align-items: center;
+                gap: .625rem;
+                color: $primary-default;
+            }
+        }
+    }
+}
