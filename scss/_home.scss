@@ -17,6 +17,9 @@
                 opacity: 0.4;
                 filter: grayscale(100%);
 
+                &.disabled{
+                    pointer-events: none;
+                }
                 &.swiper-slide-thumb-active{
                     opacity: 1;
                     filter: grayscale(0%);
@@ -37,6 +40,12 @@
                 }
                 &.slide02{
                     background: url(/img/assets/banner-slide-02.jpg) no-repeat center center;
+                    .right-content{
+                        .logo{
+                            height: 13.125rem;
+                            margin-bottom: 3.5rem;
+                        }
+                    }
                 }
                 &.slide03{
                     background: url(/img/assets/banner-slide-03.jpg) no-repeat center center;
