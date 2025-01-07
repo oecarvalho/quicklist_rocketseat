@@ -227,11 +227,36 @@
         }
     }
 
+  .tab-games-content{
+
     .tab-pane-games{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 2rem;
+        display: none;
+
+        &.active{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.875rem 2rem;
+        }
+
+        .card-all-games{
+            width: 100%;
+            max-width: 17.5rem;
+            border: 1px solid $neutral-700;
+            height: 24rem;
+            border-radius: .375rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            span{
+                margin-top: 2.25rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: .875rem;
+            }
+        }
     }
+  }
 }
