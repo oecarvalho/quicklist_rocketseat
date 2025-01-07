@@ -216,6 +216,20 @@
                 gap: 1.5rem;
                 justify-content: space-between;
                 margin-left: 10rem;
+
+                li{
+                    a{
+                       img{
+                            opacity: 0.5;
+                            transition: opacity .3s;
+                       }
+                       &.active{
+                        img{
+                            opacity: 1;
+                        }
+                       }
+                    }
+                }
             }
 
             .btn-all-games{
@@ -236,6 +250,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 2.875rem 2rem;
+            animation: fadeUp .4s forwards;
         }
 
         .card-all-games{
@@ -259,4 +274,16 @@
         }
     }
   }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
