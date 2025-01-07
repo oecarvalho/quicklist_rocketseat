@@ -1,1 +1,3 @@
-var number=32;console.log("buttons teste"),console.log("modal");
+var swiper2 = new Swiper(".slide-principal", {
+    effect: 'fade',
+});
