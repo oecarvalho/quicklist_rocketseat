@@ -1,4 +1,29 @@
 .s-hero{
+    position: relative;
+
+    .slide-thumbnail{
+        position: absolute;
+        z-index: 2;
+        top: 15.0625rem;
+        left: 6%;
+        height: 20rem;
+
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 100%;
+                max-width: 3rem;
+                height: 3rem;
+                cursor: pointer;
+                opacity: 0.4;
+                filter: grayscale(100%);
+
+                &.swiper-slide-thumb-active{
+                    opacity: 1;
+                    filter: grayscale(0%);
+                }
+            }
+        }
+    }
     .slide-principal{
         width: 100%;
         height: 46rem;
@@ -15,6 +40,9 @@
                 }
                 &.slide03{
                     background: url(/img/assets/banner-slide-03.jpg) no-repeat center center;
+                   .left-content{
+                        max-width: 39.125rem;
+                   }
                 }
 
                 .container{
@@ -31,7 +59,7 @@
                     h2{
                         font-weight: bold;
                         font-size: 4rem;
-                        line-height: 110.2%;
+                        line-height: 4.375rem;
                         color: $white;
                         margin-bottom: 1rem;
                     }
