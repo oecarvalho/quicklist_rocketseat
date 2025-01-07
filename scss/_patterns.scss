@@ -27,3 +27,45 @@
         }
     }
 }
+
+
+.game-card{
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    &:hover{
+        .image{
+            img{
+                transform: scale(1.05);
+                
+            }
+        }
+    }
+    .image{
+        overflow: hidden;
+        border-radius: 6px;
+        height: 24rem;
+        width: 100%;
+        margin-bottom: 1.625rem;
+        img{
+            transition: transform .4s ease-in;
+        }
+    }
+
+    .info{
+        color: $white;
+
+        h3{
+            font-weight: 600;
+            font-size: 1.125rem;
+            line-height: 1.6875rem;
+        }
+
+        span{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.3125rem;
+            color: rgba(299, 299, 299, 0.8);
+        }
+    }
+}
