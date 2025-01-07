@@ -1,2 +1,6 @@
-@use 'header';
-@use 'home';
+@import 'variable';
+@import 'reset';
+@import 'container';
+@import 'patterns';
+@import 'header';
+@import 'home';

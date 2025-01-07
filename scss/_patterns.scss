@@ -1,0 +1,29 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .625rem 1rem;
+    border: 1px solid transparent;
+    border-radius: .1875rem;
+    font-weight: 500;
+    font-size: 14px;
+    color: $white;
+
+    &-primary{
+        background-color: $primary-default;
+        border-color: $primary-default;
+        &:hover{
+            background-color: $primary-light;
+            transition: .3s;
+        }
+    }
+
+    &-outline{
+        border-color: $white;
+        &:hover{
+            background-color: $white;
+            color: $neutral-100;
+            transition: .3s;
+        }
+    }
+}
