@@ -178,7 +178,7 @@
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: 5.375rem;
-        
+
         .left-top{
             display: flex;
             align-items: flex-start;
@@ -225,5 +225,13 @@
                 color: $primary-default;
             }
         }
+    }
+
+    .tab-pane-games{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 }
