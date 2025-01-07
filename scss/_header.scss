@@ -1,3 +1,55 @@
 header{
-    position: fixed;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-content{
+            display: flex;
+            align-items: center;
+            
+            .logo{
+                margin-right: 7.5rem;
+                position: relative;
+                &:after{
+                    position: absolute;
+                    left: 0;
+                    bottom: -1.8125rem;
+                    content: '';
+                    width: 2.6875rem;
+                    border-bottom: 2px solid #00AEFF;
+                }
+            }
+
+            .menu{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 2.125rem;
+
+                    li{
+                        a{
+                            display: inline-flex;
+                            align-items: center;
+                            gap: .75rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+    }
 }
