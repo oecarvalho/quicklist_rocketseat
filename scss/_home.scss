@@ -385,6 +385,146 @@
 
 }
 
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2025;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .box{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 43.5rem;
+        height: 37.5rem;
+        background: url('/img/assets/bg-modal.png') no-repeat $neutral-100 top left;
+        border-radius: .25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .close{
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+
+        .logo{
+            margin-bottom: 2.5rem;
+            width: 10.375rem;
+        }
+
+        form{
+            width: 100%;
+            max-width: 26.625rem;
+            margin-bottom: 3rem;
+
+            .form-group{
+                margin-bottom: 1rem;
+
+                &:last-child{
+                    margin-bottom: 1.5rem;
+                }
+
+                input[type = 'text'], input[type = 'password']{
+                    width: 100%;
+                    height: 48px;
+                    border-radius: .25rem;
+                    border: none;
+                    padding: 0 1rem;
+                    font-weight: 500;
+                    font-size: .9375rem;
+                    line-height: 1.375rem;
+                    color: $neutral-700;
+                    &::placeholder{
+                        opacity: 0.6;
+                    }
+                }
+                
+                button{
+                    width: 100%;
+                    justify-content: center;
+                    color: $white;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .others-connect{
+            margin-bottom: 2.1875rem;
+            
+            p{
+                text-align: center;
+                font-weight: 500;
+                font-size: .875rem;
+                line-height: 1.3125rem;
+                color: $white;
+                margin-bottom: 1rem;
+            }
+
+            ul{ 
+                display: flex;
+                
+                li{
+                    &:not(:first-child){
+                        margin-left: 16px;
+                    }
+
+                    button{
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: .25rem;
+                        background-color: $white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .message-user{
+            text-align: center;
+
+
+            p{
+                margin-bottom: 1rem;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-decoration: underline;
+                color: $primary-light;
+                transition: .3s;
+
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
 @keyframes fadeUp{
     from{
         opacity: 0;
