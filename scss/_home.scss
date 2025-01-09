@@ -1,0 +1,97 @@
+.quicklist{
+    width: 100%;
+    max-width: 39.375rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .logo-list{
+        margin: 25px auto 94px auto;
+
+    }
+
+    h2{
+        text-align: left;
+        margin-bottom: 2.75rem;
+    }
+
+    .input-texto{
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input[type='text']{
+            width: 100%;
+            max-width: 28.125rem;
+            height: 44px;
+            padding-left: 1.125rem;
+            border-radius: .75rem;
+            background-color: $background-secondary;
+            border: 1px solid $border;
+        }
+
+        
+        input[type='text']:focus{
+            border-color: $color-brand;
+            outline: none;
+        }
+
+        .btn-add{
+            padding: .75rem 1.5rem;
+            background-color: $color-brand;
+            color: $white;
+            border-radius: .75rem;
+            font-weight: 600;
+            transition: .3s ease;
+            &:hover{
+                background-color: $color-brand-hover;
+            }
+        }
+
+    }
+
+    ul{
+        margin-bottom: 2.25rem;
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $background-secondary;
+            padding: .5rem .75rem;
+            border-radius: .75rem;
+            margin-bottom: .75rem;
+
+            .conteudo-lista{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .75rem;
+
+                input[type='checkbox']{
+                    border-radius: .125rem;
+                }
+            }
+         
+        }
+    }
+
+    .modal-delete{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-danger;
+        color: $white;
+        padding: .75rem;
+        border-radius: .75rem;
+
+        .conteudo-modal{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-weight: 500;
+        }
+    }
+
+}
