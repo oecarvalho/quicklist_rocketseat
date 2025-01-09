@@ -49,6 +49,20 @@
             }
         }
 
+        @media(max-width: 652px){
+            flex-direction: column;
+            gap: 12px;
+
+            input[type='text']{
+                max-width: 20.625rem;
+            }
+
+            .btn-add{
+                width: 100%;
+                max-width: 20.625rem;
+            }
+        }
+
     }
 
     ul{
@@ -75,10 +89,27 @@
             }
          
         }
+
+      
+    }
+    @media(max-width: 652px){
+        ul{
+            width: 100%;
+            max-width: 330px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            li{
+                max-width: 330px;
+                width: 100%;
+            }
+        }
     }
 
     .modal-delete{
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         background-color: $color-danger;
@@ -92,6 +123,13 @@
             gap: .5rem;
             font-weight: 500;
         }
+
+        &.active{
+            display: flex;
+        }
     }
 
+    @media(max-width: 40.75rem){
+        max-width: 330px;
+    }
 }
